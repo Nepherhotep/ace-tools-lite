@@ -1,4 +1,7 @@
-# ace-tools-lite
+# Ace Tools
+
+![logo2](https://github.com/user-attachments/assets/ab8d7f6e-dc1a-424d-be8f-3e572fe8ed0e)
+
 
 A lightweight Python package that provides a drop-in replacement for `ace_tools.display_dataframe_to_user` 
 and related utilities — making it easier to follow ChatGPT guidance involving `ace_tools` 
