@@ -1,4 +1,4 @@
-# ace_tools.py
+# tools.py
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -18,11 +18,11 @@ def display_dataframe_to_user(name: str, dataframe: pd.DataFrame):
         raise TypeError("Expected a pandas DataFrame")
 
     if _in_notebook:
-        styled_html = f"<h3>{name}</h3>{dataframe.to_html(border=1)}"
-        display(HTML(styled_html))
+        display(HTML(f"<h3>{name}</h3>"))
+        display(dataframe)
     else:
         print(f"\n{name}:\n")
-        print(dataframe.to_string(index=True))
+        print(dataframe)
 
 
 def display_chart_to_user(title: str = None):
